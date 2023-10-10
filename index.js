@@ -1,6 +1,14 @@
 const { Telegraf } = require("telegraf")
 const { Markup } = require("telegraf")
 const { Telegram } = require("telegraf")
+const readline = require("readline")
+readline.createInterface({
+    input:procces.stdin,
+    output: process.stdout
+})
+let token
+
+rl.question("Enter your token: ",(tk)=>{token = tk})
 
 const bot = new Telegraf(token)
 

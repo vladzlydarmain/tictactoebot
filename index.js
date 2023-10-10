@@ -2,9 +2,7 @@ const { Telegraf } = require("telegraf")
 const { Markup } = require("telegraf")
 const { Telegram } = require("telegraf")
 
-let TOKEN
-
-const bot = new Telegraf(TOKEN)
+const bot = new Telegraf(process.env.TOKEN)
 
 const users = {}
 
